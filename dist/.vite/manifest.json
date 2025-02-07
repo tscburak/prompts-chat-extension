@@ -5,8 +5,8 @@
     "src": "../../../../@crx/manifest",
     "isEntry": true
   },
-  "_constants-D_3DnnfB.js": {
-    "file": "assets/constants-D_3DnnfB.js",
+  "_constants-Bou1abVk.js": {
+    "file": "assets/constants-Bou1abVk.js",
     "name": "constants"
   },
   "_content-script.ts-loader-BFHWiJN-.js": {
@@ -14,24 +14,24 @@
     "src": "_content-script.ts-loader-BFHWiJN-.js"
   },
   "index.html": {
-    "file": "assets/index.html-CG_Yblxv.js",
+    "file": "assets/index.html-B8K1P3WH.js",
     "name": "index.html",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_constants-D_3DnnfB.js"
+      "_constants-Bou1abVk.js"
     ],
     "css": [
-      "assets/index-BqLJVtm6.css"
+      "assets/index-DaS5BA23.css"
     ]
   },
   "src/background.ts": {
-    "file": "assets/background.ts-CZJjHnk2.js",
+    "file": "assets/background.ts-C69yUpST.js",
     "name": "background.ts",
     "src": "src/background.ts",
     "isEntry": true,
     "imports": [
-      "_constants-D_3DnnfB.js"
+      "_constants-Bou1abVk.js"
     ]
   },
   "src/content-script.ts": {

@@ -1,7 +1,7 @@
 # prompts.chat Extension
 
 <p align="center">
-  <img src="public/prompts-chat-logo-48.svg" alt="prompts.chat Extension Logo" width="48" height="48">
+  <img src="public/prompts-chat-img.png" alt="prompts.chat Extension Screenshot" width="800" style="max-width: 100%; height: auto;" />
 </p>
 
 A browser extension that enhances [prompts.chat](https://prompts.chat) with additional features and improvements. This extension is built on top of the amazing [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) collection by [Fatih Kadir Akın](https://github.com/f).
