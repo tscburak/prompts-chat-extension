@@ -11,7 +11,6 @@ A browser extension that enhances [prompts.chat](https://prompts.chat) with addi
 - 🌓 Dark/Light mode support
 - 🔍 Enhanced search capabilities
 - 📋 Quick copy functionality
-- 💾 Local storage for favorite prompts
 - 🎨 Modern and clean UI
 - ⚡️ Performance optimizations
 
