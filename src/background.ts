@@ -24,12 +24,20 @@ function isOnModelDomain(currentUrl: string, baseUrl: string): boolean {
 }
 
 const getActiveTab = async () => {
-  const [activeTab] = await chrome.tabs.query({
+  const tabs = await chrome.tabs.query({
     active: true,
-    currentWindow: true,
     lastFocusedWindow: true
   });
-  return activeTab;
+
+  if (tabs.length > 0) {
+    return tabs[0];
+  }
+
+  const allTabs = await chrome.tabs.query({
+    lastFocusedWindow: true
+  });
+
+  return allTabs[0];
 }
 
 const constructPromptUrl = (promptUrl: string, prompt: string) => {
