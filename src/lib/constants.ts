@@ -15,7 +15,7 @@ export const AI_MODELS = [
     icon: '/openai-icon.svg',
     baseUrl: 'https://chatgpt.com',
     promptUrl: 'https://chatgpt.com/?prompt={prompt}',
-    inputSelector: '#prompt-textarea'
+    inputSelector: '#prompt-textarea p'
   },
   {
     id: 'claude',
