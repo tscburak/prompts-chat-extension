@@ -123,7 +123,7 @@ export function PromptCard({
                   <img
                     src={currentModel.icon}
                     alt={currentModel.name}
-                    className={`size-4`}
+                    className={`size-4 ${['github-copilot', 'chatgpt'].includes(currentModel.id) ? 'dark:invert' : ''}`}
                   />
                 )}
                 Use in {currentModel.name}
@@ -151,7 +151,7 @@ export function PromptCard({
                         {model.id === selectedModel ? <Check className="size-4" /> : <img
                           src={model.icon}
                           alt={model.name}
-                          className={`size-4`}
+                          className={`size-4 ${['github-copilot', 'chatgpt'].includes(model.id) ? 'dark:invert' : ''}`}
                         />}
                         <span className="text-sm">{model.name}</span>
                       </div>
