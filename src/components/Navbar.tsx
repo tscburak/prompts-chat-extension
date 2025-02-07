@@ -33,7 +33,7 @@ export function Navbar() {
                   {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
                 </Button>
                 <a
-                  href="https://github.com/f/awesome-chatgpt-prompts"
+                  href="https://github.com/fatihsolhan/prompts-chat-extension"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-foreground/80"
