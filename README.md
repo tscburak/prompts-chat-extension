@@ -25,6 +25,9 @@ Coming soon...
 3. Enable "Developer mode" in the top right
 4. Click "Load unpacked" and select the `dist` folder from the cloned repository
 
+## Privacy
+This extension does not collect any personal information. Read our full [Privacy Policy](PRIVACY.md) for more details.
+
 ## Development
 
 ```bash

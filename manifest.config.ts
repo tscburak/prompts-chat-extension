@@ -52,7 +52,6 @@ export default defineManifest(async (env) => ({
     'storage',
     'activeTab',
     'tabs',
-    'webRequest',
     'sidePanel',
   ],
   content_scripts: [

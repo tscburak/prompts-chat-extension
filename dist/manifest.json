@@ -24,7 +24,6 @@
     "storage",
     "activeTab",
     "tabs",
-    "webRequest",
     "sidePanel"
   ],
   "content_scripts": [
