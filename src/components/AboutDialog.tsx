@@ -30,16 +30,16 @@ export function AboutDialog({ trigger }: AboutDialogProps) {
               <div className="flex items-center justify-between rounded-lg bg-card border p-4 shadow-sm hover:shadow-md transition-all">
                 <div className="flex items-center gap-3">
                   <Avatar>
-                    <AvatarImage src="https://github.com/f.png" />
-                    <AvatarFallback>FKA</AvatarFallback>
+                    <AvatarImage src="https://github.com/fatihsolhan.png" />
+                    <AvatarFallback>FS</AvatarFallback>
                   </Avatar>
                   <div>
-                    <div className="text-sm font-medium">Fatih Kadir Akın</div>
-                    <div className="text-sm text-muted-foreground">Original Repository</div>
+                    <div className="text-sm font-medium">Fatih Solhan</div>
+                    <div className="text-sm text-muted-foreground">Extension Creator</div>
                   </div>
                 </div>
                 <a
-                  href="https://github.com/f/awesome-chatgpt-prompts"
+                  href="https://github.com/fatihsolhan/prompts-chat-extension"
                   target="_blank"
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors-disabled p-2 hover:bg-accent rounded-md"
@@ -50,16 +50,16 @@ export function AboutDialog({ trigger }: AboutDialogProps) {
               <div className="flex items-center justify-between rounded-lg bg-card border p-4 shadow-sm hover:shadow-md transition-all">
                 <div className="flex items-center gap-3">
                   <Avatar>
-                    <AvatarImage src="https://github.com/fatihsolhan.png" />
-                    <AvatarFallback>FS</AvatarFallback>
+                    <AvatarImage src="https://github.com/f.png" />
+                    <AvatarFallback>FKA</AvatarFallback>
                   </Avatar>
                   <div>
-                    <div className="text-sm font-medium">Fatih Solhan</div>
-                    <div className="text-sm text-muted-foreground">Extension</div>
+                    <div className="text-sm font-medium">Fatih Kadir Akın</div>
+                    <div className="text-sm text-muted-foreground">prompts.chat Creator</div>
                   </div>
                 </div>
                 <a
-                  href="https://github.com/fatihsolhan/prompts-chat-extension"
+                  href="https://github.com/f/awesome-chatgpt-prompts"
                   target="_blank"
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors-disabled p-2 hover:bg-accent rounded-md"
@@ -77,7 +77,7 @@ export function AboutDialog({ trigger }: AboutDialogProps) {
                 Have a great prompt to share? Add it to the original repository to make it available for everyone.
               </p>
               <a
-                href="https://github.com/f/awesome-chatgpt-prompts#-submitting-a-prompt"
+                href="https://github.com/f/awesome-chatgpt-prompts/pulls"
                 target="_blank"
                 rel="noreferrer"
               >

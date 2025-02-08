@@ -8,8 +8,10 @@ A browser extension that enhances [prompts.chat](https://prompts.chat) with addi
 
 ## Features
 
-- 🌓 Dark/Light mode support
+- ⚡️ One-Click Prompt Insertion: Instantly add prompts to your current chat or start a new conversation
+- 🤖 Multi-Platform Support: Works with ChatGPT, Claude, GitHub Copilot, Google Gemini, Perplexity, and Mistral
 - 🔍 Enhanced search capabilities
+- 🌓 Dark/Light mode support
 - 📋 Quick copy functionality
 - 🎨 Modern and clean UI
 - ⚡️ Performance optimizations
@@ -17,33 +19,48 @@ A browser extension that enhances [prompts.chat](https://prompts.chat) with addi
 ## Installation
 
 ### Chrome Web Store
+
 Coming soon...
+<!-- [Install from Chrome Web Store](https://chromewebstore.google.com/detail/) -->
+
+<!-- You can also download the latest version from our [GitHub Releases](https://github.com/fatihsolhan/prompts-chat-extension/releases) page. -->
 
 ### Manual Installation
 1. Clone this repository
-2. Open Chrome/Edge and navigate to `chrome://extensions`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the `dist` folder from the cloned repository
-
-## Privacy
-This extension does not collect any personal information. Read our full [Privacy Policy](PRIVACY.md) for more details.
+2. Follow the [Development](#development) steps to build the extension
+3. Open Chrome and navigate to `chrome://extensions/`
+4. Enable "Developer mode" in the top right corner
+5. Click "Load unpacked" and select the `dist` directory created by the build process
 
 ## Development
 
 ```bash
 # Install dependencies
-npm install
+yarn install
 
 # Start development server
-npm run dev
+yarn dev
 
 # Build for production
-npm run build
+yarn build
 ```
+
+## Privacy
+This extension does not collect any personal information. Read our full [Privacy Policy](PRIVACY.md) for more details.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+### Releases
+
+This project uses [semantic-release](https://semantic-release.gitbook.io/) for automated versioning and releases. When PRs are merged to main:
+- Version is automatically determined from commit messages
+- CHANGELOG.md is automatically updated
+- GitHub Release is created
+- Extension is published to Chrome Web Store
+
+Check our [releases page](https://github.com/fatihsolhan/prompts-chat-extension/releases) for the latest versions.
 
 ### Adding New Prompts
 
