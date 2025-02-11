@@ -1,3 +1,10 @@
+## 1.0.0 (2025-02-11)
+
+### 🔧 Maintenance
+
+* improve release process and documentation ([6b4f266](https://github.com/fatihsolhan/prompts-chat-extension/commit/6b4f2663dd2759130e7ad64a390df3d8f54b6df0))
+* remove unused scripting permission ([0e44ee5](https://github.com/fatihsolhan/prompts-chat-extension/commit/0e44ee515bb5929cb7097e8afcfd63c7ce80772b))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
