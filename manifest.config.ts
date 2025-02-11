@@ -48,7 +48,6 @@ export default defineManifest(async (env) => ({
     default_path: 'index.html',
   },
   permissions: [
-    'scripting',
     'storage',
     'activeTab',
     'tabs',

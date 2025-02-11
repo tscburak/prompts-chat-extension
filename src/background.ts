@@ -46,7 +46,6 @@ const constructPromptUrl = (promptUrl: string, prompt: string) => {
 
 const insertPrompt = async ({ prompt, inputSelector }: { prompt: string, inputSelector: string }) => {
   const activeTab = await getActiveTab();
-  console.log('activeTab', activeTab);
   return chrome.tabs.sendMessage(activeTab.id!, {
     action: 'insertPrompt',
     data: { prompt, inputSelector }
