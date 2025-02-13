@@ -20,10 +20,9 @@ A browser extension that enhances [prompts.chat](https://prompts.chat) with addi
 
 ### Chrome Web Store
 
-Coming soon...
-<!-- [Install from Chrome Web Store](https://chromewebstore.google.com/detail/) -->
+[Install from Chrome Web Store](https://chromewebstore.google.com/detail/promptschat/eemdohkhbaifiocagjlhibfbhamlbeej)
 
-<!-- You can also download the latest version from our [GitHub Releases](https://github.com/fatihsolhan/prompts-chat-extension/releases) page. -->
+You can also download the latest version from our [GitHub Releases](https://github.com/fatihsolhan/prompts-chat-extension/releases)
 
 ### Manual Installation
 1. Clone this repository
