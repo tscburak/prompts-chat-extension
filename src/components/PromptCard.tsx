@@ -1,3 +1,4 @@
+import { PromptVariablesDialog } from "@/components/PromptVariablesDialog";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -10,25 +11,26 @@ import { AI_MODELS } from "@/lib/constants";
 import { usePrompts } from "@/lib/contexts/PromptsContext";
 import { AIModel } from "@/lib/types";
 import { usePromptInAI } from "@/lib/utils/ai-interactions";
-import { Check, ChevronDown, ChevronUp, Copy, Edit2 } from "lucide-react";
-import { useEffect, useState } from "react";
-import { PromptVariablesDialog } from "@/components/PromptVariablesDialog";
-import { extractVariables, updatePromptPreview, loadStoredVariables } from "@/lib/utils/prompt-variables";
+import { extractVariables, loadStoredVariables, updatePromptPreview } from "@/lib/utils/prompt-variables";
 import { slugify } from '@/lib/utils/string';
+import { Check, ChevronDown, ChevronUp, Copy, Edit2, Star } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface PromptCardProps {
   act: string;
   prompt: string;
   contributor: string;
   searchQuery?: string;
+  isFavorite: boolean;
 }
 
 export function PromptCard({
   act,
   prompt,
   contributor,
+  isFavorite,
 }: PromptCardProps) {
-  const { selectedModel, setSelectedModel, query: searchQuery } = usePrompts();
+  const { selectedModel, setSelectedModel, query: searchQuery, toggleFavorite } = usePrompts();
   const [isOpen, setIsOpen] = useState(!!searchQuery);
   const { copy } = useCopy();
   const [isCopied, setIsCopied] = useState(false);
@@ -44,6 +46,7 @@ export function PromptCard({
   };
   const [isLoading, setIsLoading] = useState(false);
   const [isEditingVariables, setIsEditingVariables] = useState(false);
+  const [isCurrentFavorite, setIsCurrentFavorite] = useState(isFavorite);
 
   const variables = extractVariables(prompt);
   const hasVariables = variables.length > 0;
@@ -80,6 +83,13 @@ export function PromptCard({
     }
   };
 
+  const handleToggleFavorite = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const newState = toggleFavorite(`${act}-${prompt}`);
+    setIsCurrentFavorite(newState);
+  };
+
   const displayPrompt = updatePromptPreview(prompt, undefined, hasVariables ? act : undefined);
 
   return (
@@ -87,6 +97,14 @@ export function PromptCard({
       <div className="p-4 space-y-3">
         <div className="flex items-center justify-between">
           <h3 className="text-base font-bold">{act}</h3>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={handleToggleFavorite}
+            className={`p-1 hover:bg-transparent ${isCurrentFavorite ? 'text-yellow-500' : 'text-muted-foreground'}`}
+          >
+            <Star className="h-5 w-5" fill={isCurrentFavorite ? 'currentColor' : 'none'} />
+          </Button>
         </div>
 
         <div className="flex flex-col gap-2">
